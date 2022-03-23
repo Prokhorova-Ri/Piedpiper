@@ -21,6 +21,8 @@ body{
   padding-right: 55px;
 }
 
+/* Header */
+
 .header {
   position: absolute;
   width: 100%;
@@ -36,10 +38,8 @@ body{
     position: fixed;
   }
 
-  .header.fixed .header__inner {
-
+.header.fixed .header__inner {
     padding: 10px 0;
-
   }
 
 .header__inner {
@@ -56,12 +56,18 @@ span {
   color: #ffffff;
 }
 
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+/* Navigation */
+
 .nav {
   display: flex;
 }
 
-.nav__link {
-  
+.nav__link {  
   padding-right: 10px;
   color: #fff;
   opacity: .80;
@@ -99,6 +105,8 @@ span {
   text-align: center;  
 }
 
+/* Problem */
+
 .section2 {
   background: #EEEEEE;
   height: 719px;
@@ -129,6 +137,8 @@ span {
   line-height: 38px;
 }
 
+/* Hero-block */
+
 .section3 {
   display: flex;
   background: url("images/02.jpg");
@@ -145,6 +155,8 @@ span {
   text-align: center;
   color: #FFFFFF;
 }
+
+/* PiedPiperCoin */
 
 .section4 {
   padding-top: 48px;
@@ -178,6 +190,8 @@ span {
   Width: 115px;
   Height: 115px;  
 }
+
+/* Team */
 
 .section5 {
   height: 845px;
@@ -229,6 +243,8 @@ color: #000000;
   margin: 41px 0;
 }
 
+/* Footer */
+
 .footer {
   display: flex;
   height: 176px;
@@ -245,6 +261,8 @@ color: #000000;
   padding: 48px 0 0 0;
   width: 540px;
 }
+
+/* Burger */
 
 .burger{
   display: none;
@@ -288,9 +306,30 @@ color: #000000;
   bottom: -8px;
 }
 
+/* Media */
+
 @media (max-width: 991px) {
-  .nav {
+.nav {
     display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: right;
+    background-color: #007765;
+}
+
+span {
+  display: none;
+}
+
+.nav.show {
+  display: flex;
+}
+
+.nav__link {
+  padding: 8px 25px;
 }
 
   .burger{

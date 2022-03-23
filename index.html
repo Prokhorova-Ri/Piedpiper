@@ -11,33 +11,39 @@
   <title>Piedpiper</title>
 </head>
 <body>
+
+  <!-- Header -->
   <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
-        <div class="header__logo">
+        <button class="button" type="button" id="button">
           <img src="images/logo.png" alt="" class="img__logo">
-        </div>
-        <nav class="nav">
-          <a class="nav__link" href="">the problem</a>
+        </button>
+
+   <!-- Navigation -->
+        <nav class="nav" id="nav">
+          <a class="nav__link" href="" data-scroll="#problem">the problem</a>
           <span>|</span>        
-          <a class="nav__link" href="">PiedPiperCoin</a>
+          <a class="nav__link" href="" data-scroll="#coin">PiedPiperCoin</a>
           <span>|</span>  
-          <a class="nav__link" href="">the team</a>
+          <a class="nav__link" href="" data-scroll="#team">the team</a>
         </nav>        
-        <button class="burger" type="button">
+        <button class="burger" type="button" id="navToggle">
           <span class="burger__item">MENU</span>
         </button>
       </div>
     </div>
   </header>
 
+  <!-- Container -->
   <div class="section" id="section">
     <div class="container">
       <h1 class="section__title">PiperNet Is Here</h1>
     </div>
   </div>
 
-  <div class="section2">
+  <!-- Problem -->
+  <div class="section2" id="problem">
     <div class="container2">
       <h2 class="section2__title">The Problem</h2>
         <div class="section2__text">
@@ -55,7 +61,7 @@
       </div>
     </div>
   </div>
-
+<!-- Hero-block -->
   <div class="section3">
     <div class="container">
       <div class="content3__text">
@@ -67,7 +73,8 @@
     </div>
   </div>
 
-  <div class="section4">
+  <!-- PiedPiperCoin -->
+  <div class="section4" id="coin">
     <div class="container">
       <h2 class="section4__title">Introducing PiedPiperCoin</h2>
       
@@ -88,7 +95,8 @@
     </div>
   </div>
 
-  <div class="section5">
+  <!-- Team -->
+  <div class="section5" id="team">
     <div class="container">
       <h2 class="section5__title">The Team</h2>
     </div>
@@ -132,6 +140,7 @@
     </div>
   </div>
 
+  <!-- Footer -->
   <div class="footer">    
       <div class="footer__text">
         All other trademarks and copyrights are the property of their
